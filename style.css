@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.list{
+    list-style-type: decimal;
+    background-color: rgb(236, 130, 130);
+    padding:10px;
+    counter-reset: number;
+    list-style: none;
+}
+
+.item__list{
+    padding: 5px 10px;
+    margin: 5px  0 5px;
+    color: white;
+    background-color: rgb(202, 70, 55);
+}
+
+ul li:before {
+    counter-increment: number;
+    content: counter(number)". ";
+    margin-right: 0.5em;
+    background-color:rgb(202, 70, 55) ;
+}
+
+.item__list__text{
+    background-color: rgb(165, 42, 42);
+    padding: 5px 20px;
+}
